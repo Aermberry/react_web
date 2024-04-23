@@ -1,0 +1,72 @@
+.about {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right {
+    flex-basis: 56%;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.play-icon {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.about h3 {
+    font-weight: 600;
+    font-weight: 16px;
+    color: #212EA0;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: #000F38;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.about p {
+    color: #676767;
+    margin-bottom: 15px;
+}
+
+/* ------------media query------------- */
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+    }
+
+    /* 
+
+    默认情况下，弹性项目的排列顺序是根据它们在 HTML 结构中的出现顺序确定的。但是，通过设置 order 属性，你可以改变这个默认的排列顺序。
+    order 属性接受整数值作为参数，值越小，项目在布局中的位置越靠前（向起始方向）。默认情况下，所有项目的 order 属性值都是 0。
+    负值也是有效的，且可以与正值混合使用。
+
+     */
+    .about-left {
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+
+    .about-right {
+        flex-basis: 100%;
+    }
+}
