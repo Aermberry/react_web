@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/images/logo.png";
-import menu_icon from "../../assets/images/menu-icon.png";
+import Images from "../../utils/Images";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
@@ -27,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-      <img src={logo} alt="" className="logo" />
+      <img src={Images.logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
@@ -60,7 +59,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
+      <img src={Images.menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
   );
 };

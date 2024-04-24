@@ -1,10 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import msg_icon from "../../assets/images/msg-icon.png";
-import mail_icon from "../../assets/images/mail-icon.png";
-import phone_icon from "../../assets/images/phone-icon.png";
-import location_icon from "../../assets/images/location-icon.png";
-import white_arrow from "../../assets/images/white-arrow.png";
+import Images from "../../utils/Images";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -38,20 +34,20 @@ const Contact = () => {
       <div className="contact-col">
         <h3>
           Send us a message
-          <img src={msg_icon} />
+          <img src={Images.msg_icon} />
         </h3>
         <p>
           Feel free to contact us if you have any questions or concerns. We are
           here to help you.
           <ul>
             <li>
-              <img src={mail_icon} alt="" /> Contact@GreatStack.dev
+              <img src={Images.mail_icon} alt="" /> Contact@GreatStack.dev
             </li>
             <li>
-              <img src={phone_icon} alt="" /> +1 123-456-78952
+              <img src={Images.phone_icon} alt="" /> +1 123-456-78952
             </li>
             <li>
-              <img src={location_icon} alt="" />
+              <img src={Images.location_icon} alt="" />
               77 Massachusetts Ave,Cambridge
               <br />
               MA 02139,United States
@@ -83,7 +79,7 @@ const Contact = () => {
           ></textarea>
           <button type="submit" className="btn dark-btn">
             Submit now
-            <img src={white_arrow} alt="" />
+            <img src={Images.white_arrow} alt="" />
           </button>
           <span>{result}</span>
         </form>

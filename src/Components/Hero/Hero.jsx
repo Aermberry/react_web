@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import dark_arrow from "../../assets/images/dark-arrow.png";
+import Images from "../../utils/Images";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
           quaerat.
         </p>
         <button className="btn">
-          Join us today <img src={dark_arrow}></img>
+          Join us today <img src={Images.dark_arrow}></img>
         </button>
       </div>
     </div>
